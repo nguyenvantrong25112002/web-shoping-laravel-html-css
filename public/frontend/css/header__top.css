@@ -1,0 +1,214 @@
+.header__actions {
+    user-select: none;
+    float: right;
+    display: flex;
+}
+
+.header__actions .account {
+    margin-right: 20px;
+}
+
+.header__actions .account .dropdown-toggle::after {
+    content: none;
+}
+
+.header__actions .account .dropdown-toggle {
+    line-height: 40px;
+}
+
+.header__actions .account .dropdown-menu {
+    border: 1px solid;
+}
+
+.header__actions>a,
+.header__actions .ps-dropdown>a {
+    display: inline-block;
+    padding: 0 20px 0 15px;
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 13px;
+    text-align: center;
+    color: #8d8d8d;
+    text-transform: uppercase;
+    line-height: 40px;
+    border-left: 1px solid #e5e5e5;
+    vertical-align: top;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+}
+
+.header__actions>a>i {
+    font-size: 1rem;
+}
+
+.header__actions>a>i,
+.header__actions .ps-dropdown>a>i {
+    margin-left: 5px;
+}
+
+.header__actions>a:hover,
+.header__actions .ps-dropdown>a:hover {
+    background-color: #e5e5e5;
+    color: var(--background-color);
+}
+
+.header__actions .ps-dropdown {
+    margin-right: -4px;
+}
+
+.header__actions .ps-dropdown.open a.dropdown-toggle {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+    background-color: #e5e5e5;
+    color: var(--background-color);
+}
+
+.header__actions .ps-dropdown .dropdown-menu {
+    padding: 0;
+    right: 0;
+    /* left: auto; */
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    /* border: none; */
+}
+
+.header__actions .ps-dropdown .dropdown-menu li a {
+    padding: 9px 20px;
+    display: block;
+    line-height: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 13px;
+    color: #8d8d8d;
+    text-transform: uppercase;
+}
+
+.header__actions .ps-dropdown .dropdown-menu li a img {
+    max-width: 20px;
+    border: 1px solid #eee;
+    margin-right: 10px;
+}
+
+.header__actions .ps-dropdown .dropdown-menu li a:hover {
+    background-color: var(--background-color);
+    color: #fff;
+}
+
+.header__actions .ps-dropdown .dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.header__actions .ps-dropdown:last-child>a {
+    border-right: 1px solid #e5e5e5;
+}
+
+@media (max-width: 479px) {
+    .header__actions>a,
+    .header__actions .ps-dropdown>a {
+        font-size: 12px;
+    }
+}
+
+.header {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.header .ps-logo {
+    /* display: inline-block;
+    max-width: 100px;
+    line-height: 55px; */
+}
+
+.header .header__top {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header .header__top p {
+    margin-bottom: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    text-align: left;
+    color: #5b5b5b;
+    line-height: 40px;
+}
+
+@media (max-width: 1199px) {
+    .header {
+        position: relative;
+    }
+    .header .navigation {
+        padding: 0;
+        min-height: 50px;
+        background-color: #fff;
+    }
+    .header .menu-toggle {
+        display: inline-block;
+        float: right;
+    }
+}
+
+@media (max-width: 991px) {
+    .header .header__top p {
+        display: none;
+    }
+    .header .ps-logo {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header .ps-search--header {
+        max-width: 200px;
+    }
+}
+
+.header--sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 240px;
+    height: 100%;
+    z-index: 10000;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.header--sidebar.active {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+@media (max-width: 479px) {
+    .header--sidebar .ps-search--header {
+        padding: 15px 0;
+    }
+    .header--sidebar .ps-search--header input {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        border-radius: 0;
+    }
+}
+
+.header-services {
+    background-color: #eee;
+    height: 50px;
+    overflow: hidden;
+}

@@ -1,0 +1,58 @@
+label.error {
+    color: red
+}
+
+label.attributeValue span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.bootstrap-select {
+    margin-bottom: 1rem;
+    width: 100% !important;
+}
+
+.bootstrap-select .btn-light {
+    background: #ffffff;
+    border-color: #e6e6e6;
+    color: rgb(0, 0, 0) !important;
+}
+
+.bootstrap-select .btn-light:active,
+.bootstrap-select .btn-light:focus,
+.bootstrap-select .btn-light:hover {
+    /* background: #2c2c2c;
+    color: #fff;
+    border-color: #2c2c2c; */
+    outline: none !important;
+}
+
+[data-theme-version="dark"] .bootstrap-select .btn-light:active,
+[data-theme-version="dark"] .bootstrap-select .btn-light:focus,
+[data-theme-version="dark"] .bootstrap-select .btn-light:hover {
+    background: #292929;
+}
+
+[data-theme-version="dark"] .bootstrap-select .btn-light:not(:disabled):not(.disabled):active,
+[data-theme-version="dark"] .bootstrap-select .btn-light:not(:disabled):not(.disabled).active,
+[data-theme-version="dark"] .bootstrap-select .show>.btn-light.dropdown-toggle {
+    background: #2a2c32;
+}
+
+.bootstrap-select.show .btn {
+    background: transparent;
+    border-color: #dddfe1;
+    color: #454545;
+}
+
+.bootstrap-select .text-muted {
+    background: transparent;
+    border-color: #dddfe1;
+}
+
+.bootstrap-select .text-muted.dropdown-toggle::after {
+    color: #454545;
+    font-size: 1.5rem;
+}

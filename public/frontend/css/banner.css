@@ -1,0 +1,61 @@
+.ps__banner {
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.ps__banner .ps__banner-owl-nav {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.ps__banner-owl-nav>a.ps__banner-owl-nav_item {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    padding: 4px 16px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 !important;
+    font-size: 2.5rem;
+    border-radius: 50%;
+}
+
+.ps__banner-owl-nav>a.ps__banner-owl-nav_item:active {
+    background-color: rgb(255, 255, 255);
+}
+
+.ps__banner-owl-nav>a.ps__banner-owl-nav_item i {
+    margin: 0 !important;
+}
+
+.ps__banner-owl-nav>a.ps__banner-owl-nav_item.ps-prev {
+    transform: translateX(-20px);
+    left: 0;
+}
+
+.ps__banner-owl-nav>a.ps__banner-owl-nav_item.ps-next {
+    transform: translateX(20px);
+    right: 0;
+}
+
+.ps__banner-owl-nav>a.ps__banner-owl-nav_item.ps-prev:hover {
+    box-shadow: 5px 0px 4px -1px var(--background-color);
+}
+
+.ps__banner-owl-nav>a.ps__banner-owl-nav_item.ps-next:hover {
+    box-shadow: -5px 0px 4px -1px var(--background-color);
+}
+
+.ps-banner__item {}
+
+.ps-banner__item .ps-banner__img {
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    width: 100%;
+}
